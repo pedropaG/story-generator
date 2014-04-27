@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= render :partial => 'editor/head'%>
+</head>
+	<body id="page">
+		<%= render :partial => 'editor/menu'%>
+		<div id="dragger_pane">
+			<div id="main">				
+				<%= yield :main %>
+			</div>
+		</div>
+		<%= yield :javascripts %>
+	</body>
+</html>

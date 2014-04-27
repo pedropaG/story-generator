@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  page_init: 1
+  page_fin: 1
+  text: MyString
+  image: 
+  picked: 1
+
+two:
+  page_init: 1
+  page_fin: 1
+  text: MyString
+  image: 
+  picked: 1

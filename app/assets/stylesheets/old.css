@@ -1,0 +1,79 @@
+
+html{  background: rgb(204, 204, 204);}
+#main{
+	padding: 15%;
+	position: relative;
+}
+.node{
+	position: absolute;
+	width: 200px;
+	height: 150px;		
+	text-align: left;
+	font-size: 15px;
+	box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.4);
+	background: white;
+	border-radius: 10px;
+	overflow: hidden;
+}			
+.node .header{ font-size: 20px; line-height: 40px; color: white; text-align: center; background: black;}
+.node p{ margin: 5px;}
+.node:hover{ cursor: move; }
+.node.jsPlumb_dragged{ box-shadow: 10px 10px 8px 5px rgba(0,0,0,0.2); margin-left: 5px; margin-top: 5px;}	
+.red .header{ background-color: rgb(255, 58, 58);}
+.green .header{ background-color: rgb(48, 129, 48);}
+.blue .header{ background-color: rgb(85, 85, 223);}
+.orange .header{ background-color: rgb(213, 108, 12);}
+.pink .header{ background-color: rgb(230, 110, 229);}
+.yellow .header{ background-color: rgb(218, 218, 90); }
+.turquoise .header{ background-color: rgb(90, 203, 218);}
+.purple .header{ background-color: rgb(112, 66, 170);}
+
+#node_1{ top: 120px; left: 120px;}
+.actions {
+	position: fixed;
+	top: 0;
+	left: 5%;
+	display: block;
+	width: 90%;
+	z-index: 100000;
+}
+#scroll{
+	width: 400px;
+	height: 40px;
+	background: white;
+	border-radius: 35px;
+	box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.6);
+	float: left; 
+	margin-top: 3px;
+	padding: 0 20px;
+	box-sizing: border-box;
+}	
+#zoom{
+	width: 100%;
+	margin-top: 10px;
+}
+#create_input {
+	float: left;
+	font-size: 25px;
+	width: 40px;
+	border-radius: 10px;
+	text-align: center;
+	margin-left: 20px;
+	margin-top: 8px;
+}
+.button {
+	display: inline-block;
+	float: left;
+	width: 45px;
+	height: 45px;
+	background: rgb(50,50,50);
+	border-radius: 100%;
+	margin-left: 5px;
+	box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.6);
+}
+.button:hover {
+	box-shadow: none;
+	margin-left: 5px;
+	margin-top: 5px;
+	cursor: pointer;
+}

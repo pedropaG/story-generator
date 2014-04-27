@@ -1,0 +1,31 @@
+es:
+  activerecord:
+    model:    
+      plot: 
+        one: Trama
+        other: Tramas
+      user: 
+        one: Usuario
+        other: Usuarios
+      story:
+        one: Historia
+        other: Historias
+      page:
+        one: Página
+        other: Páginas
+      choices: 
+        one: Decisión
+        other: Decisiones
+    attributes:
+      plot:
+        name: Nombre
+        color: Color
+      story:
+        title: Título
+        usuario: Usuario
+      page: 
+        title: Título
+        text: Texto
+        choices: Decisiones
+        
+        

@@ -1,0 +1,13 @@
+<% klass = ["black", "red", "green", "blue","orange", "pink", "yellow", "turquoise", "purple"].sample %>
+<% rotation = 1 + rand(8) - 4%>
+<% tape_rotation = 1 + rand(4) - 2%>
+<% style = "top: 500px; left: 320px; -webkit-transform: rotate(#{rotation}deg);" %>
+<% id = rand(10000)+1 %>
+last_node = $(".node").last();
+
+$("#main").append("<%= raw node(klass, style, tape_rotation, id) %>");
+js_instance.connect({source: last_node.attr("id"), target: "node_<%=id%>", scope:"main", anchor: ["Perimeter", {shape:"Rectangle", rotation: <%= rotation%>}]});
+
+nodes = jsPlumb.getSelector(".node");				
+js_instance.draggable($(".node"));
+resizeMainPane();
