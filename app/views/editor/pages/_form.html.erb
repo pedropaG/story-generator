@@ -1,0 +1,6 @@
+<%= content_tag :h1, t(:new_title, :scope =>[:actions], :model => @page.class.model_name.human)%>
+<%= form_for @page, :url => editor_pages_path do |f| %>
+	<%= f.label :title %>
+	<%= f.text_field :title %>
+	<%= f.submit t(:create, :scope => [:actions]) %>
+<%end%>

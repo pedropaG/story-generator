@@ -186,3 +186,15 @@ svg._jsPlumb_connector {z-index: 10000;}
 .button.config{ background-image: image-url("icons/cogwheel13.png"); }
 .button.story{ background-image: image-url("icons/agenda.png"); }
 .button.user{ background-image: image-url("icons/business66.png"); }
+
+
+
+/* FORMS */
+#content_form{
+  position: absolute;
+  top: 100px;
+  margin-left: 20%;
+  margin-right: 20%;
+  background: white;
+  width: 60%;
+}

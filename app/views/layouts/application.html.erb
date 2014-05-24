@@ -7,8 +7,9 @@
 		<%= render :partial => 'editor/menu'%>
 		<div id="dragger_pane">
 			<div id="main">				
-				<%= yield :main %>
+				<%= yield %>
 			</div>
+			<%= yield :main%>
 		</div>
 		<%= yield :javascripts %>
 	</body>

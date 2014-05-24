@@ -1,6 +1,6 @@
 es:
   activerecord:
-    model:    
+    models:    
       plot: 
         one: Trama
         other: Tramas
@@ -27,5 +27,8 @@ es:
         title: Título
         text: Texto
         choices: Decisiones
+  actions:
+    new_title: Nueva %{model}
+    create: Crear
         
         

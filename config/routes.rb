@@ -1,10 +1,16 @@
 StoryGen::Application.routes.draw do
-  
+    
   namespace :editor, :module => "editor" do
-    get "story" => "stories#show"
+    
+    get "story" => "stories#show"    
     get "story/add_page/:number" => "stories#add_page", :as => "add_page_to_story"
+    
+    resources :pages
+    #get "story/:story_id/new_page" => "pages#new"
+    
+    
   end
-  
+    
   root :to => 'editor/stories#show'
   
   
